@@ -28,8 +28,8 @@ class Slider extends Entity{
             this.sliderButton.x = this.sliderVal.scale_x/2-0;
         }
         this.value = round((this.sliderButton.x + this.sliderVal.scale_x/2) * 100 / this.sliderVal.scale_x, 0);
+    }
     setValue = function(value=100) {
         this.sliderButton.x = (this.sliderButton.x = value * this.sliderVal.scale_x / 100 - this.sliderVal.scale_x / 2);
-    }
     }
 }
